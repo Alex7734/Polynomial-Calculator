@@ -1,0 +1,4 @@
+--patch-module
+com.polynomial.calculator.polynomialcalculator=_
+--add-reads
+com.polynomial.calculator.polynomialcalculator=ALL-UNNAMED

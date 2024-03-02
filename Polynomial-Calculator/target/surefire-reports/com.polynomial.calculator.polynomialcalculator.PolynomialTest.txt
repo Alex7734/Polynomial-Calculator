@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.polynomial.calculator.polynomialcalculator.PolynomialTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec <<< FAILURE!
+com.polynomial.calculator.polynomialcalculator.PolynomialTest.testSimplify()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "-"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at com.polynomial.calculator.polynomialcalculator.models.Polynomial.fromString(Polynomial.java:36)
+	at com.polynomial.calculator.polynomialcalculator.PolynomialTest.testSimplify(PolynomialTest.java:53)
+
+com.polynomial.calculator.polynomialcalculator.PolynomialTest.testIntegration()  Time elapsed: 0.006 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: The integration result is incorrect. ==> expected: <-1/4x^4+3/2x^2> but was: <-0.25x^4+1.50x^2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1152)
+	at com.polynomial.calculator.polynomialcalculator.PolynomialTest.testIntegration(PolynomialTest.java:77)
+
